@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 基础深度解析 - 个人主页</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">My Portfolio</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../about.html">关于我</a></li>
+                <li><a href="../blog.html" class="active">博客</a></li>
+                <li><a href="../contact.html">联系我</a></li>
+                <li><button id="theme-toggle" class="theme-btn" title="切换主题">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 博客文章 -->
+    <section class="blog-post">
+        <div class="container">
+            <div class="post-header">
+                <h1>JavaScript 基础深度解析</h1>
+                <p class="post-meta">发布于 2026-06-14 | 阅读时间：10 分钟</p>
+            </div>
+
+            <div class="post-content">
+                <p>
+                    理解 JavaScript 的核心概念对成为高效的开发者至关重要。在这篇文章中，
+                    我将深入探讨作用域、闭包、原型链等关键概念。
+                </p>
+
+                <h2>1. 作用域 (Scope)</h2>
+                <p>
+                    作用域决定了变量和函数的可访问性。JavaScript 有三种主要作用域：全局作用域、函数作用域和块级作用域。
+                </p>
+
+                <h2>2. 闭包 (Closure)</h2>
+                <p>
+                    闭包是函数和其外部作用域的组合。它允许函数访问外部函数的变量。
+                </p>
+
+                <h2>3. 原型链 (Prototype Chain)</h2>
+                <p>
+                    JavaScript 使用原型链来实现继承。每个对象都有一个原型，对象可以继承其原型的属性和方法。
+                </p>
+
+                <h2>4. This 关键字</h2>
+                <p>
+                    <code>this</code> ���值取决于函数是如何被调用的。
+                </p>
+
+                <h2>5. 异步编程</h2>
+                <p>
+                    异步编程是 JavaScript 的重要部分。理解回调、Promise 和 async/await 是关键。
+                </p>
+
+                <h2>总结</h2>
+                <p>
+                    这些基础概念是 JavaScript 开发的基石。深入理解它们将帮助你编写更好的代码。
+                </p>
+            </div>
+
+            <div class="post-navigation">
+                <a href="css-tips.html" class="post-nav-link">← 上一篇：CSS 技巧和技术</a>
+                <a href="../blog.html" class="post-nav-link">返回博客列表 →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Moweiji888. 保留所有权利。</p>
+            <div class="social-links">
+                <a href="#" title="GitHub">GitHub</a>
+                <a href="#" title="Twitter">Twitter</a>
+                <a href="#" title="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+</body>
+</html>

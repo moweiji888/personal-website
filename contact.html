@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我 - 个人主页</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">My Portfolio</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="blog.html">博客</a></li>
+                <li><a href="contact.html" class="active">联系我</a></li>
+                <li><button id="theme-toggle" class="theme-btn" title="切换主题">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 联系区 -->
+    <section class="contact-section">
+        <div class="container">
+            <h1>联系我</h1>
+            <p class="section-subtitle">有任何问题或合作机会？请随时联系我</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>联系方式</h2>
+                    <div class="info-item">
+                        <span class="icon">✉️</span>
+                        <div>
+                            <h3>邮箱</h3>
+                            <p><a href="mailto:your-email@example.com">your-email@example.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📱</span>
+                        <div>
+                            <h3>电话</h3>
+                            <p>+86 XXX-XXXX-XXXX</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <div>
+                            <h3>地点</h3>
+                            <p>中国</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">🔗</span>
+                        <div>
+                            <h3>社交媒体</h3>
+                            <div class="social-links">
+                                <a href="#" target="_blank">GitHub</a>
+                                <a href="#" target="_blank">Twitter</a>
+                                <a href="#" target="_blank">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h2>发送消息</h2>
+                    <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">姓名 *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">邮箱 *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">主题 *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">消息 *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">发送消息</button>
+                        <p class="form-note" id="form-message"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Moweiji888. 保留所有权利。</p>
+            <div class="social-links">
+                <a href="#" title="GitHub">GitHub</a>
+                <a href="#" title="Twitter">Twitter</a>
+                <a href="#" title="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

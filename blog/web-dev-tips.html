@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web 开发最佳实践 - 个人主页</title>
+    <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">My Portfolio</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="../about.html">关于我</a></li>
+                <li><a href="../blog.html" class="active">博客</a></li>
+                <li><a href="../contact.html">联系我</a></li>
+                <li><button id="theme-toggle" class="theme-btn" title="切换主题">🌙</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 博客文章 -->
+    <section class="blog-post">
+        <div class="container">
+            <div class="post-header">
+                <h1>Web 开发最佳实践</h1>
+                <p class="post-meta">发布于 2026-06-16 | 阅读时间：8 分钟</p>
+            </div>
+
+            <div class="post-content">
+                <p>
+                    在我的开发生涯中，我积累了一些关于 Web 开发的最佳实践。这些建议来自实际项目经验，
+                    旨在帮助开发者写出更高质量、更易维护的代码。
+                </p>
+
+                <h2>1. 代码组织和结构</h2>
+                <p>
+                    良好的代码组织是构建可维护项目的基础。确保你的项目具有清晰的目录结构，
+                    便于团队成员快速找到所需的文件。
+                </p>
+
+                <h2>2. 性能优化</h2>
+                <p>
+                    性能对用户体验至关重要。以下是一些性能优化的技巧：
+                </p>
+
+                <ul>
+                    <li><strong>最小化 HTTP 请求</strong>：合并文件、使用 CSS Sprites</li>
+                    <li><strong>压缩资源</strong>：使用 gzip 压缩、压缩图片</li>
+                    <li><strong>缓存策略</strong>：利用浏览器缓存和 CDN</li>
+                    <li><strong>延迟加载</strong>：使用 lazy loading 加载图片和资源</li>
+                    <li><strong>代码分割</strong>：按需加载 JavaScript 代码</li>
+                </ul>
+
+                <h2>3. 安全性</h2>
+                <p>
+                    安全性不应该被忽视。始终验证用户输入，防止 XSS 和 CSRF 攻击。
+                </p>
+
+                <h2>4. 易用性 (Accessibility)</h2>
+                <p>
+                    确保你的网站对所有人都是可用的，包括有残疾的用户。
+                </p>
+
+                <h2>5. 版本控制</h2>
+                <p>
+                    使用 Git 进行版本控制是现代开发的必备工具。
+                </p>
+
+                <h2>6. 测试</h2>
+                <p>
+                    自动化测试可以帮助你及早发现和修复 bug。
+                </p>
+
+                <h2>总结</h2>
+                <p>
+                    遵循这些最佳实践可以帮助你构建高质量、易维护的 Web 应用。
+                </p>
+            </div>
+
+            <div class="post-navigation">
+                <a href="hello-world.html" class="post-nav-link">← 上一篇：欢迎来到我的博客</a>
+                <a href="css-tips.html" class="post-nav-link">下一篇：CSS 技巧和技术 →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Moweiji888. 保留所有权利。</p>
+            <div class="social-links">
+                <a href="#" title="GitHub">GitHub</a>
+                <a href="#" title="Twitter">Twitter</a>
+                <a href="#" title="LinkedIn">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+</body>
+</html>
